@@ -44,7 +44,11 @@ public class Pokemon
         {
 			exp += Math.Ceiling((enemyEXPyeild * enemyLevel * 1.5) / (7 * numOfPokemon)); 
 		}
-		
+    }
+
+	public void takePhisicalDammage(int enemyAttack, int enemyLevel, int power)
+    {
+		currentHp -= Math.Ceiling(((2*enemyLevel/5 + 2)*power * (enemyAttack/defence)))
     }
 
 	public void setMaxHealth()
