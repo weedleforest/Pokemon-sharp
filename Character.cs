@@ -8,6 +8,8 @@ public class Character
 	private int gold;
 	private int badges;
 	private bool champion;
+	private string sPronoun;
+	private string oPronoun;
 
 	public Character(string chosenname)
 	{

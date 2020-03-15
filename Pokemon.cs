@@ -3,21 +3,23 @@
 public class Pokemon
 {
 	// array(0) = base array(1) = IV array(2) = EV array(3) = total/max
-	private int Hp = new int[3];
-	private int attack = new int[3];
-	private int defence = new int[3];
-	private int speed = new int[3];
-	private int special = new int[3];
+	private int Hp = new int[4];
+	private int attack = new int[4];
+	private int defence = new int[4];
+	private int specialAttack = new int[4];
+	private int specialDefence = new int[4];
+	private int speed = new int[4];
 	private string levelUpGroup;
 	private int exp;
 	private string name;
 	private int level;
 	private int currentHp;
 	private bool fainted;
-	private bool canEvolve;
+	private int levelOfEvolve;
 	private int ID;
 	private bool wild;
 	private int baseEXPYeild;
+	private string gender;
 
 	public Pokemon()
 	{
@@ -48,7 +50,12 @@ public class Pokemon
 
 	public void takePhisicalDammage(int enemyAttack, int enemyLevel, int power)
     {
-		currentHp -= Math.Ceiling(((2*enemyLevel/5 + 2)*power * (enemyAttack/defence)))
+		
+    }
+
+	public void takeSpecialDammage(int enemyAttack, int enemyLevel, int power)
+    {
+
     }
 
 	public void setMaxHealth()
@@ -71,9 +78,14 @@ public class Pokemon
 		speed[3] = ((speed[0] + speed[1]) * 2 + ((speed[2] ^ (1 / 2) / 4)) / 100 * level) + 5;
 	}
 
-	public void setMaxSpecial()
+	public void setMaxSpecialAttack()
     {
-		special[3] = ((special[0] + special[1]) * 2 + ((special[2] ^ (1 / 2) / 4)) / 100 * level) + 5;
+		specialAttack[3] = ((specialAttack[0] + specialAttack[1]) * 2 + ((specialAttack[2] ^ (1 / 2) / 4)) / 100 * level) + 5;
+	}
+
+	public void setMaxSpecialDefence()
+    {
+		specialDefence[3] = ((specialDefence[0] + specialDefence[1]) * 2 + ((specialDefence[2] ^ (1 / 2) / 4)) / 100 * level) + 5;
 	}
 
 	public int getBaseHp()
