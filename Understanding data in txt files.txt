@@ -1,3 +1,3 @@
 How to read the stat text file: 
-ecsample: Medium Slow,16,45,49,49,65,65,45,64,0,0,0,1,0,0,875,Bulbasaur
-meaning: ExpGroup,levelOfEvolution,baseHp,baseAttack,baseDefence,BaseSpAttack,baseSpDefence,baseSpeed,ExpGainFromDefeat,HpEv,attackEv,defenceEv,spAttackEv,spDefenceEv,speedEv,persentMale taken as n/1000 unlike n/100,name
+ecsample: Medium Slow,64,0,0,0,1,0,0,16,45,49,49,65,65,45,Bulbasaur,875,
+meaning: ExpGroup,ExpGainFromDefeat,HpEv,attackEv,defenceEv,spAttackEv,spDefenceEv,speedEv,levelOfEvolution,baseHp,baseAttack,baseDefence,BaseSpAttack,baseSpDefence,baseSpeed,name,persentMale taken as n/1000 unlike n/100,

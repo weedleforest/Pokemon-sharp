@@ -2,23 +2,20 @@
 
 public class Pokemon
 {
-	// array(0) = base array(1) = IV array(2) = EV array(3) = total/max
-	private int Hp = new int[4];
-	private int attack = new int[4];
-	private int defence = new int[4];
-	private int specialAttack = new int[4];
-	private int specialDefence = new int[4];
-	private int speed = new int[4];
-	private string levelUpGroup;
+	// array(0) = IV array(1) = EV array(2) = total/max
+	private int Hp = new int[2];
+	private int attack = new int[2];
+	private int defence = new int[2];
+	private int specialAttack = new int[2];
+	private int specialDefence = new int[2];
+	private int speed = new int[2];
 	private int exp;
 	private string name;
 	private int level;
 	private int currentHp;
 	private bool fainted;
-	private int levelOfEvolve;
 	private int ID;
 	private bool wild;
-	private int baseEXPYeild;
 	private string gender;
 
 	public Pokemon()
@@ -112,4 +109,10 @@ public class Pokemon
     {
 		return special(0);
     }
+
+    private string getStats()
+    {
+       
+    }
+
 }
